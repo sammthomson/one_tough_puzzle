@@ -4,7 +4,7 @@ as seen at http://nrich.maths.org/1388
 Author: Sam Thomson
 Date: 1/1/2012
 """
-HEART, CLUB, DAIMOND, SPADE = "hcds"
+HEART, CLUB, DIAMOND, SPADE = "hcds"
 NUM_ROWS = 3
 NUM_COLS = 3
 NUM_PIECES = NUM_ROWS * NUM_COLS
@@ -12,14 +12,14 @@ PIECE_WIDTH = 16 # in characters, for printing
 # enumeration of sides of all pieces, clockwise from top. pieces were
 # arranged so that top and right are out, bottom and left are in.
 PIECE_SIDES = (
-    (CLUB, HEART, DAIMOND, CLUB),
-    (HEART, DAIMOND, DAIMOND, HEART),
-    (DAIMOND, CLUB, CLUB, DAIMOND),
-    (SPADE, DAIMOND, SPADE, HEART),
+    (CLUB, HEART, DIAMOND, CLUB),
+    (HEART, DIAMOND, DIAMOND, HEART),
+    (DIAMOND, CLUB, CLUB, DIAMOND),
+    (SPADE, DIAMOND, SPADE, HEART),
     (HEART, SPADE, SPADE, CLUB),
     (CLUB, HEART, SPADE, HEART),
-    (HEART, DAIMOND, CLUB, CLUB),
-    (SPADE, DAIMOND, HEART, DAIMOND),
+    (HEART, DIAMOND, CLUB, CLUB),
+    (SPADE, DIAMOND, HEART, DIAMOND),
     (SPADE, SPADE, HEART, CLUB)
 )
 
@@ -47,7 +47,7 @@ def reshape(pieces, width=NUM_COLS, height=NUM_ROWS):
 
 class Side(object):
     """ A side of one piece. Each side has a shape (one of HEART, CLUB,
-    DAIMOND, SPADE), and an extrude (True or False) which represents whether
+    DIAMOND, SPADE), and an extrude (True or False) which represents whether
     or not it's sticking in or out.
     """
     def __init__(self, shape, extrude):

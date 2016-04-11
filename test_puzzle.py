@@ -6,7 +6,7 @@ Date: 1/1/2012
 from unittest import TestCase, main
 
 from puzzle import (
-    HEART, CLUB, DAIMOND, SPADE, PIECES, reshape, Side, PartialSolution,
+    HEART, CLUB, DIAMOND, SPADE, PIECES, reshape, Side, PartialSolution,
     Solver)
 
 
